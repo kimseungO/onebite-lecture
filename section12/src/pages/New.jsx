@@ -11,8 +11,8 @@ const New = () => {
 
     const onSubmit = (input) => {
         onCreate(input.createdDate.getTime(), input.emotionId, input.content)
+        nav('/', {replace:true}) // ai에 의해 onSubmit 함수 외부에서 안으로 옮김. 추후 문제시 확인 필요
     };
-    nav('/', {replace:true})
 
     return <div>
         <Header

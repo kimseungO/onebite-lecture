@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 const DiaryItem = ({id, emotionId, createdDate, content}) => {
     const nav = useNavigate();
-    console.log("DiaryItem이 받은 date 값:", content);
     return (
         <div className="DiaryItem">
             <div
