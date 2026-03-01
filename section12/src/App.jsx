@@ -53,7 +53,7 @@ function App() {
       return;
     }
     const parsedData = JSON.parse(storedData);
-    if (Array.isArray(parsedData)) {
+    if (!Array.isArray(parsedData)) {
       setIsLoading(false);
       return;
     }
